@@ -10,7 +10,7 @@ const clean = require('gulp-clean');
 
 function scripts(){
     return src([
-        'node_modules/swiper/swiper-bundle.js',
+        
         'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
@@ -21,7 +21,7 @@ function scripts(){
 
 function styles(){
     return src([
-        'node_modules/swiper/swiper-bundle.css',
+        
         'app/scss/style.scss'
     ])
     .pipe(autoprefixer({overrideBrowserslist:['last 10 version']}))
